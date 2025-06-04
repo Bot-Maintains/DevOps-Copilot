@@ -1,0 +1,29 @@
+{
+  "name": "DevOpsCopilot",
+  "url": "https://devopscopilot.example.com",
+  "hook_attributes": {
+    "url": "https://devopscopilot.example.com/webhook"
+  },
+  "redirect_url": "https://devopscopilot.example.com/oauth/callback",
+  "callback_urls": [
+    "https://devopscopilot.example.com/callback"
+  ],
+  "public": true,
+  "default_permissions": {
+    "issues": "write",
+    "checks": "write",
+    "pull_requests": "write",
+    "contents": "read"
+  },
+  "default_events": [
+    "issues",
+    "issue_comment",
+    "pull_request",
+    "workflow_run",
+    "check_suite",
+    "check_run",
+    "installation",
+    "installation_repositories",
+    "marketplace_purchase"
+  ]
+}
